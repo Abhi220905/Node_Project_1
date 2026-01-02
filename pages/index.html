@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">Nodemon</a>
+            <a class="navbar-brand fw-bold" href="/">Nodemon </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -44,8 +44,7 @@
         <h1 class="fw-bold mb-4">Home Page</h1>
 
         <div class="card shadow border-0 mx-auto" style="max-width: 500px;">
-            <img src="../img/img1.png" class="card-img-top"
-                alt="Home Image" />
+            <img src="../img/img1.png" class="card-img-top" alt="Home Image" />
             <div class="card-body">
                 <h5 class="card-title">Welcome to Home</h5>
                 <p class="text-muted mb-0">
@@ -96,8 +95,12 @@
 
             <!-- Copyright -->
             <div class="text-center pb-3 text-secondary">
-                &copy; 2026 Nodemon | All Rights Reserved
+                &copy; <span id="year"></span> Nodemon | All Rights Reserved
             </div>
+
+            <script>
+                document.getElementById("year").innerText = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 
